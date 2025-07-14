@@ -1,26 +1,24 @@
-# PERSONAL-PORTFOLIO-WEBPAGE
+#  PERSONAL PORTFOLIO WEBPAGE
 
-*Intern Name:*Adarsh Singh
+*Intern Name:* Adarsh Singh 
 
-*Company Name:* CODTECH Solutions Pvt. Ltd.  
-**Intern ID:** TN12345  
-**Internship Duration:** June 1, 2025 – July 15, 2025  
-**Mentor Name:** Mr. Rajeev Mehra  
+*Company Name:*  CODTECH IT SOLUTIONS PVT.LTD
+
+*Intern ID:* CT06DG352
+
+*Internship Duration:* 6 weeks
+
+*Mentor Name:* Neela Santhosh
 
 ---
 
 ## Overview
 
-This README file documents the basic details of my internship at **TechNova Solutions**, where I contributed to front-end development and API integration tasks within a collaborative engineering team.
+This README file documents the basic details of my internship at CODTECH IT SOLUTIONS PVT.LTD , where I worked on various development tasks and projects to enhance my technical and professional skills.
 
-### Key Contributions
-- Developed responsive UI components using React.
-- Integrated third-party APIs to enhance data-driven features.
-- Participated in code reviews and daily standups.
 
----
 
 ## Contact
 
-📧 adarsh@example.com  
-🔗 [linkedin.com/in/adarshsingh](https://linkedin.com/in/adarshsingh)
+For any queries, feel free to reach out at:  
+📧 adarshsingh1202@gmail.com  
