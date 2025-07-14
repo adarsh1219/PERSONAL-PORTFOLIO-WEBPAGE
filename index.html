@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adarsh Singh | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">Adarsh</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Hi, I'm Adarsh Singh</h2>
+    <p>I'm a developer passionate about building web applications.</p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <img src="images/expensly.png" alt="Expensly" class="project-img" />
+        <h3>Expensly</h3>
+        <p>A sleek and intuitive expense tracker that helps users manage their daily finances. Built with React and Firebase, it features real-time updates, secure authentication, and insightful spending analytics.</p>
+      </div>
+      <div class="project">
+        <img src="images/crypto.png" alt="Crypto Converter" class="project-img" />
+        <h3>Crypto Converter</h3>
+        <p>A real-time cryptocurrency-to-INR converter web app. It fetches live exchange rates using public APIs and offers a clean, responsive interface built with JavaScript and RESTful API integration.</p>
+      </div>
+      <div class="project">
+        <img src="images/museai.png" alt="MuseAI" class="project-img" />
+        <h3>MuseAI</h3>
+        <p>An AI-powered music identification and recommendation web app. Built using Python, TensorFlow, and Librosa, it recognizes songs from short audio clips and suggests similar tracks based on user preferences.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I'm Adarsh Singh, a passionate and curious developer pursuing Computer Science at Jaypee University of Engineering and Technology. I enjoy building full-stack web applications and solving real-world problems through clean, efficient code.
+
+With a strong foundation in JavaScript, React, Java, and Python, I love exploring emerging technologies like AI/ML and cloud services. I’ve worked on a range of projects—from smart expense tracking apps to AI-powered music prediction systems.
+
+Beyond coding, I actively contribute to technical fests and hackathons, and I'm always eager to collaborate, learn, and innovate.
+
+</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: adarshsingh1202@gmail.com</p>
+    <p>LinkedIn: linkedin.com/in/adarshsingh</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Adarsh Singh. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript to set background images dynamically -->
+<script>
+  const PEXELS_API_KEY = "SSlzUAbNcpwl3f5X3xJmH0wYwQIqtDWxO8n1oQWlD4jmn3ShdZJbnYdP"; // <-- Replace with your key
+  const heroSection = document.querySelector(".hero");
+  const aboutSection = document.querySelector(".about");
+
+  async function fetchImage(query, element) {
+    const response = await fetch(`https://api.pexels.com/v1/search?query=${query}&per_page=1`, {
+      headers: {
+        Authorization: PEXELS_API_KEY
+      }
+    });
+
+    const data = await response.json();
+    if (data.photos && data.photos.length > 0) {
+      const imageUrl = data.photos[0].src.landscape;
+      element.style.backgroundImage = `url('${imageUrl}')`;
+    } else {
+      console.warn("No image found for:", query);
+    }
+  }
+
+  fetchImage("developer", heroSection);
+  fetchImage("workspace", aboutSection);
+</script>
+
+
+</body>
+</html>
