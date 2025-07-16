@@ -36,6 +36,8 @@ Interactive Elements: Smooth animations and transitions for an engaging user exp
 
 Blog/Articles (Optional): A section for sharing insights, tutorials, or project updates.
 
+<img width="1903" height="950" alt="image" src="https://github.com/user-attachments/assets/d41029c3-4345-474b-8035-0645b90deea5" />
+
 
 ## Contact
 
